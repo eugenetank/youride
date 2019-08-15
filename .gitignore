@@ -1,3 +1,5 @@
 .vscode
+.idea
 .env
 db.sqlite3
+client/node_modules
