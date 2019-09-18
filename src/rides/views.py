@@ -4,6 +4,6 @@ from .models import Car
 from .serializers import CarSerializer
 
 
-class CarViewSet(viewsets.ModelViewSet):
+class GetAllCars(viewsets.ModelViewSet):
     queryset = Car.objects.all()
     serializer_class = CarSerializer

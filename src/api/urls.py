@@ -18,10 +18,10 @@ from django.urls import path, include
 
 from rest_framework.routers import DefaultRouter
 
-from rides.views import CarViewSet
+from rides.views import GetAllCars
 
 router = DefaultRouter()
-router.register('cars', CarViewSet)
+router.register('cars', GetAllCars)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +29,5 @@ urlpatterns = [
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     path('auth/', include('users.urls')),
     # API
-    path('v1/', include(router.urls))
+    path('api/v1/', include(router.urls))
 ]

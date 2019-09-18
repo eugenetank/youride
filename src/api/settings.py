@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'oauth2_provider',
     'rest_framework',
-    'users',
     'rides',
 ]
 
@@ -104,6 +103,11 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+# User model
+
+# AUTH_USER_MODEL = 'users.User'
 
 
 # Internationalization
