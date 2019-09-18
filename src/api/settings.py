@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # 'oauth2_provider',
     'rest_framework',
-    'rides',
+    'rides.apps.RidesConfig',
 ]
 
 MIDDLEWARE = [
