@@ -26,7 +26,7 @@ router.register('cars', GetAllCars)
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Authentication
-    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    # path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     path('auth/', include('users.urls')),
     # API
     path('api/v1/', include(router.urls))
