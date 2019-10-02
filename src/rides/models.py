@@ -25,7 +25,7 @@ class Ride(models.Model):
     distance = models.IntegerField()
     duration = models.IntegerField()
     departure_datetime = models.DateTimeField()
-    departure_delta = models.DurationField()
+    departure_delta = models.DurationField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now=True)
     last_modified = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
